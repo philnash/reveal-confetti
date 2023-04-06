@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "description": "A reveal.js plugin that allows you to add confetti to your slides",
   "source": "src/plugin.js",
-  "main": "dist/confetti.js",
   "module": "dist/confetti.esm.js",
+  "browser": "dist/confetti.js",
+  "targets": {
+    "module": {
+      "includeNodeModules": true,
+      "optimize": true
+    },
+    "browser": {
+      "includeNodeModules": true,
+      "optimize": true
+    }
+  },
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build"
@@ -22,5 +32,6 @@
   },
   "devDependencies": {
     "parcel": "^2.8.3"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
