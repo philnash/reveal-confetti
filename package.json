@@ -1,0 +1,17 @@
+{
+  "name": "reveal-confetti",
+  "version": "1.0.0",
+  "description": "A reveal.js plugin that allows you to add confetti to your slides",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reveal",
+    "reveal.js",
+    "confetti",
+    "javascript"
+  ],
+  "author": "Phil Nash <philnash@gmail.com> (https://philna.sh/)",
+  "license": "MIT"
+}
