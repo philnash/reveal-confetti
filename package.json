@@ -2,9 +2,12 @@
   "name": "reveal-confetti",
   "version": "1.0.0",
   "description": "A reveal.js plugin that allows you to add confetti to your slides",
-  "main": "index.js",
+  "source": "src/plugin.js",
+  "main": "dist/confetti.js",
+  "module": "dist/confetti.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "parcel watch",
+    "build": "parcel build"
   },
   "keywords": [
     "reveal",
@@ -13,5 +16,11 @@
     "javascript"
   ],
   "author": "Phil Nash <philnash@gmail.com> (https://philna.sh/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "canvas-confetti": "^1.6.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
 }
