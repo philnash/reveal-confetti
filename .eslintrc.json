@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "plugins": ["prettier", "sonarjs"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:sonarjs/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-var": "error",
+    "complexity": ["error", 20],
+    "max-len": ["error", {"code": 120, "ignoreUrls": true}],
+    "prettier/prettier": ["error", {
+      "printWidth": 120
+    }]
+  },
+  "ignorePatterns": ["dist/*"]
+}
